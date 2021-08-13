@@ -15,13 +15,13 @@ async def forcesub(c, m):
                await m.reply_text("**Yᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ɪɴ Oᴜʀ ᴄʜᴀɴɴᴇʟ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ 😜**", quote=True)
                return
         except UserNotParticipant:
-            buttons = [[InlineKeyboardButton(text='Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🔖', url=f"https://t.me/{UPDATE_CHANNEL}")]]
+            buttons = [[InlineKeyboardButton(text='Movie Cʜᴀɴɴᴇʟ 🔖', url=f"https://t.me/{UPDATE_CHANNEL}")]]
             if m.text:
                 if (len(m.text.split(' ')) > 1) & ('start' in m.text):
                     chat_id, msg_id = m.text.split(' ')[1].split('_')
                     buttons.append([InlineKeyboardButton('🔄 Rᴇғʀᴇsʜ', callback_data=f'refresh+{chat_id}+{msg_id}')])
             await m.reply_text(
-                f"Hey {m.from_user.mention(style='md')} ʏᴏᴜ ɴᴇᴇᴅ ᴊᴏɪɴ Mʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ᴜsᴇ ᴍᴇ 😉\n\n"
+                f"Hey {m.from_user.mention(style='md')} You Must join our movie Channel in order to use me😉\n\n"
                 "__Pʀᴇss ᴛʜᴇ Fᴏʟʟᴏᴡɪɴɢ Bᴜᴛᴛᴏɴ ᴛᴏ ᴊᴏɪɴ Nᴏᴡ 👇__",
                 reply_markup=InlineKeyboardMarkup(buttons),
                 quote=True
