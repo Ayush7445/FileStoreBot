@@ -9,7 +9,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyromod import listen
 from pyrogram import Client
 from config import *
-from .plugins.broadcast import Broadcast
+from plugins.broadcast import Broadcast
 
 def main():
     plugins = dict(root="plugins")
