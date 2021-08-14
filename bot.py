@@ -10,7 +10,6 @@ from pyromod import listen
 from pyrogram import Client
 from config import *
 
-
 def main():
     plugins = dict(root="plugins")
     app = Client("FileStore",
